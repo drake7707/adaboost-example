@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Adaboost implementation</title>
+    <link rel='stylesheet' href='main.css' />
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js"></script>
+</head>
+
+<body>
+    <h1>Adaboost</h1>
+    <em>Classifiers are chosen as decision tree stumps at random, so it's possible the desired result is unattainable</em>
+    <div class="options">
+        <label>
+            <input type="radio" id="chk1D" name="type" checked="checked" /> 1D
+        </label>
+        <label>
+            <input type="radio" id="chk2DPlus" name="type" /> 2D - Plus sign
+        </label>
+        <label>
+            <input type="radio" id="chk2DPlusAxisAlignedClassifiers" name="type" /> 2D - Plus sign with axis aligned classifiers
+        </label>
+        <label>
+            <input type="radio" id="chk2DRandomSplit" name="type" /> 2D - Random split
+        </label>
+        <label>
+            <input type="radio" id="chk2DRandomSplitAxisAlignedClassifiers" name="type" /> 2D - Random split with axis aligned classifiers
+        </label>
+        <label>
+            <input type="radio" id="chk2DCircle" name="type" /> 2D - Circle
+        </label>
+        <input type="button" id="btnGo" value="Go" />
+    </div>
+    <div id="content">
+
+    </div>
+    <h4>Iterations</h4>
+    <em>Per iteration the following is listed: best classifier, current adaboost output, sample weights</em>
+    <div id="debug">
+
+    </div>
+    <script src='main.js'></script>
+</body>
+
+</html>

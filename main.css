@@ -1,0 +1,36 @@
+body {
+    font-family:Verdana;
+    font-size: 0.9em;
+}
+
+#content > span {
+   display:block;
+}
+#debug > span {
+    
+    display:block;
+}
+
+#debug > canvas {
+    margin:2px;
+    
+}
+
+.canvasBelowEachOther {
+    display:block;
+}
+
+#debug,#content {
+    margin:5px;
+    padding:5px;
+    background-color:white;
+    border:1px solid #CCC;
+}
+
+.options > label {
+    display:block;
+}
+
+#btnGo {
+    width:100px;
+}
